@@ -1,3 +1,10 @@
+## Live Preview
+
+https://wisata-app-vue.vercel.app/
+
+Live preview [https://wisata-app-vue.vercel.app/](https://wisata-app-vue.vercel.app/).
+
+
 ## Screenshot
 ![Preview](https://github.com/aldohambali/wisata-app-vue/blob/main/ss_1.png)
 
