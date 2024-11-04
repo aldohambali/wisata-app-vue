@@ -763,7 +763,8 @@
   async function fetchData() {
     loading.value = true;
     try {
-      const response = await fetch('https://tempest.project-exterior.com/property/content?id='+hotelId+'&include=room&include=image&include=important_info&include=general_info');
+      // const response = await fetch('https://tempest.project-exterior.com/property/content?id='+hotelId+'&include=room&include=image&include=important_info&include=general_info');
+      const response = await fetch('/api/property/content?id='+hotelId+'&include=room&include=image&include=important_info&include=general_info');
       if (!response.ok) {
         alert('Network response was not ok')
         throw new Error('Network response was not ok');
@@ -832,7 +833,9 @@
   async function checkAvailability() {
     loading.value = true;
     try {
-      const response = await fetch('https://tempest.project-exterior.com/stay/availability/'+hotelId+'?checkin='+checkin+'&checkout='+checkout+'&guest_per_room='+guestPerRoom+'&number_of_room='+numberOfRooms+'&run_price_check=false');
+      // const response = await fetch('https://tempest.project-exterior.com/stay/availability/'+hotelId+'?checkin='+checkin+'&checkout='+checkout+'&guest_per_room='+guestPerRoom+'&number_of_room='+numberOfRooms+'&run_price_check=false');
+
+      const response = await fetch('/api/stay/availability/'+hotelId+'?checkin='+checkin+'&checkout='+checkout+'&guest_per_room='+guestPerRoom+'&number_of_room='+numberOfRooms+'&run_price_check=false');
 
 
       if (!response.ok) {

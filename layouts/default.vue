@@ -319,7 +319,7 @@
       searchLoading.value = true;
       try {
       // const response = await fetch('https://tempest.project-exterior.com/location/search?query='+searchQuery.value);
-      const response = await fetch('https://tempest.project-exterior.com/property/search?query='+searchQuery.value);
+      const response = await fetch('/api/property/search?query='+searchQuery.value);
 
       if (!response.ok) {
         alert('Network response was not ok')
