@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/",
-      "destination": "https://tempest.project-exterior.com/"
+      "source": "/api/:path*",
+      "destination": "https://tempest.project-exterior.com/:path*"
     }
   ]
 }
